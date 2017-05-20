@@ -1,0 +1,35 @@
+/*.dropDownDiv{*/
+  /*height: 210px;*/
+  /*width: 80%;*/
+  /*background-color: #69ADE1;*/
+  /*margin: auto;*/
+/*}*/
+.dropDownDiv{
+  position: fixed;
+  top: 100px;
+  left: 128px;
+  height: 210px;
+  width: 80%;
+  background-color: #69ADE1;
+  margin: auto;
+}
+textarea{
+  width: 90%;
+  height: 70px;
+  top: 30px;
+  display: block;
+  margin: auto;
+  position: relative;
+  font-size: 18px;
+}
+.btn{
+  background-color: green;
+  color: white;
+  width: 100px;
+  height: 30px;
+  position: relative;
+  float: left;
+  left: 407px;
+  top: 80px;
+  margin-left: 10px;
+}
