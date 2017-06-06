@@ -1,17 +1,12 @@
-/*.dropDownDiv{*/
-  /*height: 210px;*/
-  /*width: 80%;*/
-  /*background-color: #69ADE1;*/
-  /*margin: auto;*/
-/*}*/
 .dropDownDiv{
   position: fixed;
   top: 100px;
   left: 128px;
   height: 210px;
   width: 80%;
-  background-color: #69ADE1;
+  background-color: #4FB9E2;
   margin: auto;
+  border-radius: 0px 0px 12px 12px;
 }
 textarea{
   width: 90%;
@@ -29,7 +24,10 @@ textarea{
   height: 30px;
   position: relative;
   float: left;
-  left: 407px;
+  left: 370px;
   top: 80px;
-  margin-left: 10px;
+  margin-left: 30px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
 }

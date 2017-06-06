@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 import { TodoListService } from '../shared/todo-list.service';
 
 @Component({
@@ -7,11 +7,18 @@ import { TodoListService } from '../shared/todo-list.service';
   styleUrls: ['./task.component.css']
 })
 
-export class TaskComponent implements OnInit {
-items: any;
+export class TaskComponent {
+@Input() items: any; 
+@Output() onEdit = new EventEmitter();
+
   constructor( private todoListService:TodoListService ) { }
 
-  ngOnInit() {
-    this.items = this.todoListService.getItems();
+  delete(item) {
+    this.items = this.todoListService.deleteItem(item);
   }
+  edit(item) {
+    this.todoListService.itemIndex(item);
+    this.onEdit.emit(item);
+  }
+ 
 }

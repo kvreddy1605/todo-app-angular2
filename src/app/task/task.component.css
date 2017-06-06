@@ -1,10 +1,36 @@
-div{
+.well{
   height: 50px;
-  width: 80%;
-  background-color: #00e600;
-  color: black;
+  width: 87%;
+  font-size: 22px;
+  padding: 5px;
+  padding-left: 15px;
+  word-wrap: break-word;
+  background-color: #00afa5;
+  box-shadow: 7px 5px 15px grey;
+  border-radius: 5px;
+  color: white;
   margin: auto;
+  margin-top: 10px;
 }
-.data{
-  padding: 10px;
+.content{
+  width: 80%;
+  float: left;
 }
+.btn{
+  display: inline;
+}
+button{
+    font-size: 15px;
+    padding: 5px;
+    color: blanchedalmond;
+    background-color: #ef7c4f;
+    float: right;
+    margin-right: 10px;
+    margin-top: 8px;
+    width: 75px;
+    border-radius: 5px;
+    border: 1px solid #e84302;
+    cursor: pointer;
+}
+
+

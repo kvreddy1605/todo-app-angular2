@@ -1,6 +1,6 @@
 <div class="dropDownDiv">
   <form #taskfield="ngForm" (ngSubmit)="onSubmit(taskfield.value)">
-    <textarea id="taskData" type="text" (ngModel)="taskData" name="taskData" maxlength="140"></textarea>
+    <textarea id="taskData" type="text" [ngModel]="disp1" (ngModel)="taskData" name="taskData" maxlength="100"></textarea>
     <button type="submit" class="btn addBtn">Add Task</button>
   </form>
   <button class="btn cancelBtn" (click)="cancel()">Cancel</button>

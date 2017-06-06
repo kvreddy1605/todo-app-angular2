@@ -1,8 +1,7 @@
 <div class="taskBar">
   <button class="taskBtn" (click)="toggle()">+</button>
 </div>
-<drop-down *ngIf="visible" (onToggle)="toggle()"></drop-down>
+<drop-down *ngIf="visible" (onToggle)="toggle()" [editMode]="editMode" [disp1]="disp"></drop-down>
 <div>
-  <add-task></add-task>
+  <add-task [items]="items" (onEdit)="edit($event)"></add-task>
 </div>
-

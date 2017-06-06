@@ -12,7 +12,7 @@ import { TodoListService } from './shared/todo-list.service';
   declarations: [
     AppComponent,
     DropDownComponent,
-    TaskComponent
+    TaskComponent,
   ],
   imports: [
     BrowserModule,
